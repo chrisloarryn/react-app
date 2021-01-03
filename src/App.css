@@ -49,8 +49,8 @@ input.taskCheckbox + label.taskLabel {
 }
 
 input.taskCheckbox:checked + input.taskLabel {
-	text-decoration: line-through;
-	color: #656565;
+	text-decoration: line-through !important;
+	color: #656565 !important;
 }
 
 input[placeholder] {
