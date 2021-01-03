@@ -45,12 +45,32 @@ input.taskCheckbox:checked:after {
 }
 
 input.taskCheckbox + label.taskLabel {
+	border: none !important;
+	text-decoration: underline !important;
+  text-underline-position: under !important;
 	color: black;
 }
 
+label.taskLabel {
+	border: none !important;
+}
+
 input.taskCheckbox:checked + input.taskLabel {
+	border: none !important;
 	text-decoration: line-through !important;
 	color: #656565 !important;
+}
+
+.input.taskLabel:hover {
+	color: #B0D418 !important;
+}
+
+.taskLabel {
+	border: none !important;
+}
+
+.taskLabel:hover {
+	color: #B0D418;
 }
 
 input[placeholder] {
@@ -72,6 +92,10 @@ input[placeholder] {
 	font-family: Tahoma, sans-serif;
 }
 
+.header:hover {
+	color: #B0D418;
+}
+
 .inputContainer {
 	padding: 15px;
 }
@@ -81,6 +105,18 @@ input[placeholder] {
 	width: 100%;
 	border-radius: 25px;
 	box-sizing: border-box;
+}
+
+.inputContainer:hover .taskInput:hover {
+	border-color: #B0D418;
+}
+
+.inputContainer .taskInput:focus {
+	outline: none !important;
+}
+
+.inputContainer:hover .taskInput:hover {
+	border-color: #B0D418;
 }
 
 .listWrapper {
