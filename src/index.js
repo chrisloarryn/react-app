@@ -9,7 +9,6 @@ import configureStore from './store';
 import { Router, Route, Switch } from 'react-router-dom';
 import SiteNavbar from './components/SiteNavbar';
 import history from './history';
-// import TodosContainer from './containers/TodosContainer';
 
 const store = configureStore();
 
@@ -20,7 +19,6 @@ ReactDOM.render(
         <SiteNavbar />
         <Switch>
           <Route exact path='/' component={App} />
-          {/* <Route path="/app/" component={TodosContainer} /> */}
           <Route path='/about/' component={About} />
         </Switch>
       </div>
