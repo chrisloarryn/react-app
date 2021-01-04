@@ -9,6 +9,7 @@ li.task {
 	font-size: 1.2em;
 	padding: 10px 0;
 	border-bottom: 1px solid #ccc;
+	display: flex;
 }
 
 li.task:hover .deleteTaskBtn {
@@ -44,15 +45,16 @@ input.taskCheckbox:checked:after {
 	bottom: 2px;
 }
 
-input.taskCheckbox + label.taskLabel {
+input.taskCheckbox + input.taskLabel {
 	border: none !important;
 	text-decoration: underline !important;
   text-underline-position: under !important;
 	color: black;
 }
 
-label.taskLabel {
+input.taskLabel {
 	border: none !important;
+	width: 100%;
 }
 
 input.taskCheckbox:checked + input.taskLabel {
