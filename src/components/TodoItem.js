@@ -29,10 +29,11 @@ class TodoItem extends Component {
           onChange={(e) => this.updateTodo(e, todo._id)}
         />
         <input
+          className={todo.done ? 'taskLabel pointer' : 'taskLabel'}
           key={todo._id}
-          className="taskLabel"
           type="text"
           name="name"
+          disabled={todo.done}
           defaultValue={todo.name}
           onKeyPress={(e) => this.updateTodoName(e, todo._id)}
         />
